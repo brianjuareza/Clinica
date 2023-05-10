@@ -1,0 +1,120 @@
+*{  /*Afecta a toda la estructura*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  
+}
+
+body{
+    
+    text-align: center; /*El texto en el centro*/
+    font-family: sans-serif; /*Tipo de letra*/
+    background-attachment: local;
+    background-size: cover;
+
+}
+
+.head{  /*Barra donde estan las opciones de navegacion*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background:#067ea7;
+    width: 100%;
+    z-index: 100%;
+}
+
+.navbar{
+    display:flex;
+    margin-right: 10px;
+}
+
+
+.navbar a{
+    display: block;
+    padding: 20px 20px;
+    color:#fff;
+    text-decoration: none; /*Icono*/
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    background: #038eff;
+}
+
+
+.title{
+    margin: 2rem;
+    font-size: 60px;
+    font-weight: 60px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+p{
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+    margin: 1rem;
+    text-transform: uppercase;
+    font-family: Arial ;
+}
+
+
+.box-container{
+    
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box{ /*Afectar donde conincidan esas clases*/
+    height: 15rem;
+    width: 17rem;
+    background: #000000;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(12, 137, 196, 0.9);
+    margin: 4rem;
+}
+
+
+img{
+    border-radius: 2rem;
+}
+
+/*Colores de los titulos en el cuadro*/
+.box-container .box h1{
+    margin: 1rem;
+    font-size: 40px;
+    color: #00bb2d;
+}
+
+
+
+.box-container .box h2{
+    margin: 1rem;
+    font-size: 40px;
+    color: #3b5998;
+}
+
+.box-container .box h3{
+    margin:1rem;
+    font-size: 40px;
+    color: #ff0080;
+}
+
+/*Informacion dentro de los cuadros*/
+.box-container .box p{
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+
+
+
+   

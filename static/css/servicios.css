@@ -1,0 +1,61 @@
+*{  /*Afecta a toda la estructura*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    text-align: center; /*El texto en el centro*/
+    font-family: sans-serif; /*Tipo de letra*/
+    background: #6395d6;
+}
+
+.head{  /*Barra donde estan las opciones de navegacion*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background:#067ea7;
+    position: static;
+    width: 100%;
+    z-index: 100%;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar a{
+    display: block;
+    padding: 20px 20px;
+    color:#fff;
+    text-decoration: none; /*Icono*/
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    background: #038eff;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box{ /*Afectar donde conincidan esas clases*/
+    
+    height: 11rem;
+    width: 17rem;
+    background: #3755da;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0,0, .5);
+    margin: 2rem;
+}
+

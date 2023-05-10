@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/clinica.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<img src="images/hospital.jpg" width="1352" height="375">-->
+    <title>PAGINA WEB</title>
+</head>
+<body background="../static/images/fondoprincipal.png">
+
+
+    <div class ="head">
+        <nav class = "navbar">
+            <a href = "agregar_datos.html">Pacientes</a>
+            <a href = "servicios.html">Servicios</a>
+            <a href = "QuienesSomos.html">Quines somos</a>
+            <a href = "Contactanos.html">Contactanos</a>
+            <a href = "buscar.html">PEDIR CITA</a>
+            <h1> {{nombre}} </h1>
+            <a href="{{url_for('salir')}}" class="salir">SALIR</a>    
+        </nav>
+        
+    </div>
+
+</body>
+</html>

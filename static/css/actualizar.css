@@ -1,0 +1,52 @@
+body{
+    background: url(../images/a.jpg);
+    text-align: center; /*El texto en el centro*/
+    font-family: sans-serif; /*Tipo de letra*/
+    background-attachment: local;
+    background-size: cover;
+
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    position: static;
+}
+
+.box-container .box{ /*Afectar donde conincidan esas clases*/
+    
+    height: 29rem;
+    width: 30rem;
+    background: #0dbbbb;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0,0, .5);
+    margin: 2rem;
+}
+
+input{
+    border-radius: none;
+    margin: 8px;
+    font-size: 20px;
+    text-align: start;
+}
+
+.boton{
+    height: 3rem;
+    width: 7rem;
+    margin-top: 2rem;
+    background: #f6f6ff;
+    text-align: center;
+    border-radius: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.boton a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}

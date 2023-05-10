@@ -1,0 +1,105 @@
+*{  /*Afecta a toda la estructura*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    text-align: center; /*El texto en el centro*/
+    font-family: sans-serif; /*Tipo de letra*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar a{
+    display: block;
+    padding: 20px 20px;
+    color:#fff;
+    text-decoration: none; /*Icono*/
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    background: #038eff;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    position: static;
+}
+
+.box-container .box{ /*Afectar donde conincidan esas clases*/
+    
+    height: 28rem;
+    width: 25em;
+    background: #41d8d8ef;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0,0, .5);
+    margin: 2rem;
+}
+
+h3{
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    margin: 6px;
+}
+
+.input{
+    border-radius: none;
+    margin: 8px;
+    font-size: 20px;
+    text-align: start;
+}
+
+input::-webkit-input-placeholder {
+    
+    opacity: .7;
+    
+}
+
+.boton{
+    height: 3rem;
+    width: 7rem;
+    margin-top: 2rem;
+    background: #f6f6ff;
+    text-align: center;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.iniciar{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+
+}
+.volver{
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.iniciar{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+
+}
+.register{
+    color: black;
+}

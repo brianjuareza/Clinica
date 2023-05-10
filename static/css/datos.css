@@ -1,0 +1,170 @@
+body{
+    background: url(../images/a.jpg);
+     background-attachment: local;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.head{  /*Barra donde estan las opciones de navegacion*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 63px;
+  background:#067ea7;
+  position: static;
+  width: 100%;
+  z-index: 100%;
+}
+
+.navbar{
+  display: flex;
+  margin-right: 10px;
+}
+
+.navbar a{
+  display: block;
+  padding: 20px 20px;
+  color:#fff;
+  text-decoration: none; /*Icono*/
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.navbar a:hover{
+  background: #038eff;
+}
+h3{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    bottom: 20rem;
+
+}
+
+td a{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table {
+    
+    position: static;
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2.5px solid rgb(255, 255, 255);
+  }
+  thead th:nth-child(0) {
+    width: 20%;
+  }
+  thead th:nth-child(1) {
+    width: 40%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 25%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 50%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  thead th:nth-child(5) {
+    width: 25%;
+  }
+  
+  thead th:nth-child(6) {
+    width: 35%;
+  }
+  thead th:nth-child(7) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(8) {
+    width: 20%;
+  }
+
+  thead th:nth-child(9) {
+    width: 20%;
+  }
+
+  th, td {
+    padding: 20px;
+  }
+
+  html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  }
+  
+  thead th, tbody td {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  th {
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+  
+  td {
+    letter-spacing: 1px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  tbody td {
+    text-align: center;
+  }
+  
+  thead th {
+    text-align: center;
+  }
+
+
+  thead, tbody {
+    color: rgb(255, 255, 255);
+  }
+
+
+  tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #8ea09f;
+  }
+  
+  table {
+    background-color: #000000;
+  }
+
+  button{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgba(21, 56, 212, 0.925);
+    border-radius: .7rem;
+    height: 2rem;
+    font-size: .88rem;
+  }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/pedircita.css') }}">
+    <title>PEDIR CITA</title>
+</head>
+<body>
+    <div class ="head">
+        <nav class = "navbar">
+            <a href = "clinica.html">Inicio</a>
+        </nav>
+    </div>
+    <section class="box-container">
+        <div class="box">
+            <br><br>
+            <h3>Registrar usuario</h3>
+            <br>
+            {% if (miData) %} 
+            <form action="{{url_for('create')}}" method="post">
+                <label for="">Id paciente
+                    <br>
+                    <input value="{{miData.id}}" required type="text" placeholder="Folio del paciente" name="Folio"></label>
+                <label for="">Nombre del paciente 
+                    <br>
+                    <input value="{{miData.Nombres}}" required type="text" placeholder="Nombre del paciente" name="Nombres"></label>
+                <br>
+                <label for="">Apellidos
+                    <br>
+                    <input value="{{miData.Apellidos}}" required type="text" placeholder="Apellidos del paciente" name="Apellidos"></label>
+                <label for="">Telefono
+                    <br>
+                    <input value="{{miData.Telefono}}" required type="text" placeholder="numero de telefono" name="Telefono"></label>
+                <br>
+                <label for="">Direccion
+                    <br>
+                    <input value="{{miData.Direccion}}" required type="text" placeholder="Direccion" name="Direccion" autocomplete="off"></label>
+                <label for="">Fecha y Hora de la cita
+                    <br>
+                    <input required type="datetime-local" name="Fecha" autocomplete="off"></label>
+                <br>
+                
+                <label for="">especialista
+                <br>
+                <select name="Menu">
+                    <option value="0"></option>
+                    <option value="DERMATOLOGO">DERMATOLOGO</option>
+                    <option value="ANESTESIOLOGO">ANESTESIOLOGO</option>
+                    <option value="CARDIOLOGO">CARDIOLOGO</option>
+                    <option value="PEDIATRA">PEDIATRA</option>
+                    <option value="GINECOLOGO">GINECOLOGO</option>
+                    <option value="HEMATOLOGO">HEMATOLOGO</option>
+                    <option value="REHABILITACION">REHABILITACION</option>
+                    <option value="NEUROLOGO">NEUROLOGO</option>
+                    <option value="OFTALMOLOGO">OFTALMOLOGO</option>
+                    <option value="ORTOPEDISTA">ORTOPEDISTA</option>
+                  </select></label>
+                <label for="">Correo
+                    <br>
+                    <input value="{{miData.Gmail}}" required type="text" placeholder="Gmail" name="Gmail"></label>
+                <br><br>
+                <button type="submit" class="boton">Guardar</button>
+            </form>
+            {% else %}
+                <p>NO HAY REGISTRO CON EL FOLIO:
+                <strong class="busq colorCrimson"> {{ busqueda }}</strong>
+                </p>
+            {% endif %}
+        </div>
+    </section>
+</body>
+</html>

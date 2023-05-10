@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/agregar_datos.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACIENTES</title>
+</head>
+<body>
+    <div class ="head">
+        <nav class = "navbar">
+            <a href = "clinica.html">Inicio</a>
+        </nav>
+    </div>
+
+
+    <section class="box-container">
+        <div class="box">
+            <br><br>
+            <h3>Registrar usuario</h3>
+            <br>
+            <form action="{{url_for('guardar_datos')}}" method="post">
+                <input required type="text" class="input" placeholder="Nombres" name="Nombres" id="Nombres">
+                <br>
+                <input required type="text" class="input" placeholder="Apellidos" name="Apellidos" id="Apellidos">
+                <br>
+                <input required type="date"  placeholder="Fecha_de_nacimiento" name="Fecha_de_nacimiento" id="Fecha_de_nacimiento">
+                <br>
+                <input required type="text" class="input" placeholder="Direccion" name="Direccion" id="Direccion">
+                <br>
+                <input required type="tel" class="input" placeholder="Telefono" name="Telefono" id="Telefono">
+                <br>
+                <input required type="email" class="input" placeholder="Gmail" name="Gmail" id="Gmail">
+                <br><br>
+                <button type="submit" class="boton">Guardar</button>
+                <button class="boton">
+                    <a href="{{url_for('datos')}}" >BASE DE DATOS</a>
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

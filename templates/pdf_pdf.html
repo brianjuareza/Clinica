@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    h1{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    th{
+        width: 16rem;
+        height: 2.5rem;
+    }
+    td{
+        width: 50rem;
+        height: 2.5rem;
+    }
+    h5{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-align: start;
+        margin-left: 10px;
+    }
+    h6{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: None;
+        font-size: 20px;
+        text-align: start;
+        margin-left: 10px;
+    }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Template</title>
+</head>
+<body>
+    <div>
+        <img src="https://static.vecteezy.com/system/resources/previews/005/072/571/non_2x/modern-health-clinic-logo-vector.jpg" alt="">
+        <h1>Clinica - EDWARD</h1>
+    </div>
+    <br><br><br>
+
+   <TABLE BORDER>
+	<TR><TH>
+        <h5>Nombre(s)</h5>
+        </TH>
+		<TD>
+            <h6>{{Nombres}}</h6>
+        </TD></TR>
+    <TR><TH>
+        <h5>Apellidos</h5>
+        </TH>
+        <TD>
+            <h6>{{Apellidos}}</h6>
+        </TD></TR>
+    <TR><TH>
+        <h5>Fecha de nacimiento</h5>
+        </TH>
+        <TD>
+            <h6>{{Fecha_de_nacimiento}}</h6>
+        </TD></TR>
+    <TR><TH>
+        <h5>Direccion</h5>
+        </TH>
+        <TD>
+            <h6>{{Direccion}}</h6>
+        </TD></TR>
+    <TR><TH>
+        <h5>Telefono</h5>
+        </TH>
+        <TD>
+            <h6>{{Telefono}}</h6>
+        </TD></TR>
+    <TR><TH>
+        <h5>Correo</h5>
+        </TH>
+        <TD>
+            <h6>{{Gmail}}</h6>
+        </TD></TR>
+    </TABLE>
+
+</body>
+</html>

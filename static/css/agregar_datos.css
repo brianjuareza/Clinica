@@ -1,0 +1,105 @@
+*{  /*Afecta a toda la estructura*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    background: url(../images/a.jpg);
+    text-align: center; /*El texto en el centro*/
+    font-family: sans-serif; /*Tipo de letra*/
+    background-attachment: local;
+    background-size: cover;
+
+}
+
+
+
+.head{  /*Barra donde estan las opciones de navegacion*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background:#067ea7;
+    position: static;
+    width: 100%;
+    z-index: 100%;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar a{
+    display: block;
+    padding: 20px 20px;
+    color:#fff;
+    text-decoration: none; /*Icono*/
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    background: #038eff;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    position: static;
+}
+
+.box-container .box{ /*Afectar donde conincidan esas clases*/
+    
+    height: 29rem;
+    width: 30rem;
+    background: #41d8d8ef;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0,0, .5);
+    margin: 2rem;
+}
+
+input{
+    border-radius: none;
+    margin: 8px;
+    font-size: 20px;
+    text-align: start;
+    width: 20rem;
+}
+input::-webkit-input-placeholder {
+    
+    opacity: .7;
+    
+}
+#Fecha_de_nacimiento {
+    opacity: .8 ;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.boton{
+    height: 3rem;
+    width: 7rem;
+    margin-top: 2rem;
+    background: #f6f6ff;
+    text-align: center;
+    border-radius: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.boton a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}

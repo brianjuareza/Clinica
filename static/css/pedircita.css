@@ -1,0 +1,125 @@
+body{
+    background-image: url(../images/pedircitalogin.png);
+    font-family: sans-serif; /*Tipo de letra*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.head{  /*Barra donde estan las opciones de navegacion*/
+    display: flex;
+    align-items: center;
+    height: 63px;
+    background:#067ea7;
+    position: static;
+    width: 100%;
+    z-index: 100%;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+
+
+.navbar a{
+    padding: 20px 20px;
+    color:#000000;
+    text-decoration: none; /*Icono*/
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.navbar a:hover{
+    background: #038eff;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    position: static;
+}
+
+.box-container .box{ /*Afectar donde conincidan esas clases*/
+    height: auto;
+    width: 90%;
+    background: #072370f1;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0,0, .5);
+    margin: 2rem;
+}
+
+h3{
+    text-align: center;
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+
+input{
+    margin-top: .4rem;
+    margin-left: 1.4rem;
+    margin-bottom: 2rem;
+    margin-right: 1.4rem;
+    height: 32px;
+    width: 300px;
+    display:inline-flexbox;
+}
+label{
+    display: inline-block;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+select{
+    margin-top: .4rem;
+    margin-left: 1.4rem;
+    margin-bottom: 2rem;
+    margin-right: 1.4rem;
+    height: 32px;
+    width: 300px;
+    display:inline-flexbox;
+}
+
+.boton{
+        
+    text-decoration: none;
+    display:inline-block;
+    width:135px;
+    padding:12px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    background: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+    font-size: 20px;
+    box-shadow: #ccc;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.8);
+    margin-bottom: 3rem;
+  }
+
+  .boton:hover{
+        
+     color:rgb(15, 15, 15);
+     background: white;
+     border: 3px solid rgb(20, 20, 20);
+     box-shadow:NONE;
+        
+  }
+
+  input::-webkit-input-placeholder {
+    
+    opacity: .7;
+    text-transform: uppercase;
+}
+
+P{
+    color: aliceblue;
+}
+
+.input-doble input{
+    margin: 0%;
+    margin-bottom: 12px;
+}

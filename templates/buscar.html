@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 1.6rem;
+        }
+        .suggestionsBox {
+            color: #000000;
+            background:#ffffff;
+            width: 50%;
+            margin-left: 25%;
+           }
+        .suggestionList {
+            margin: 0px;
+           }
+           .suggestionList ul li {
+            list-style:none;
+            margin: 0px;
+            padding: 6px;
+            border-bottom:1px dotted #98BE56;
+            cursor: pointer;
+           }
+           .suggestionList ul li:hover {
+            background-color: #006E89;
+            color:#000;
+            text-align: center;
+           }
+           ul {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:20px;
+            color:#000000;
+            padding:0;
+            margin:0;
+           }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+
+
+function suggest(inputString){
+    if(inputString.length == 0) {
+        $('#suggestions').fadeOut();
+    } else {
+        $('#country').addClass('load');
+        $.post("/ajaxpost", {queryString: ""+inputString+""}, function(data){
+                $('#suggestions').fadeIn();
+                $('#suggestionsList').html(data); 
+                $('#suggestionsList').append(data.htmlresponse);
+                $('#country').removeClass('load');
+        });
+  }
+}
+function fill(thisValue) {
+  $('#country').val(thisValue);
+  setTimeout("$('#suggestions').fadeOut();", 600);
+}
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/pedircita.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class ="head">
+        <nav class = "navbar">
+            <a href = "clinica.html">Inicio</a>
+        </nav>
+    </div>
+    <h1>{{success}}</h1>
+    <section class="box-container">
+        <div class="box">
+            <br><br>
+            <h3>AGENDAR CITA</h3>
+            <br>
+            <form method="POST" action="{{url_for('BuscarPacientes') }}" autocomplete="off">
+                <input type="search" name="buscar" placeholder="INGRESE FOLIO DEL USUARIO">
+                <button type="submit" class="boton">BUSCAR</button>
+            </form>
+
+            <form action="{{url_for('BuscarPaciente')}}" method="post" autocomplete="off">
+                <div id="suggest">
+                 <input type="search" id="country" onkeyup="suggest(this.value);" onblur="fill();"  name="buscar" class="sf_active" placeholder="BUSCAR FOLIO DEL PACIENTE POR NOMBRE"/>
+                 <button type="submit" class="boton">BUSCAR</button> 
+                 <div class="suggestionsBox" id="suggestions">
+                   <div class="suggestionList" id="suggestionsList"></div>
+                </div>
+                </div>
+              </div>
+               
+            </form>
+        </div>
+    </section>
+</body>
+</html>

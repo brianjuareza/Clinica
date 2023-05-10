@@ -1,0 +1,11 @@
+para ejecutar el servidor en ubuntu es:
+	python3 app.py
+	
+si toda la libreria la instalamos en una carpeta vurtual (env)
+	la activamos con: source *nombre del la carpeta*/bin/activate   (igual en ubuntu)
+	
+para abrir el MySQL server en la terminal de ubuntu, usamos:
+	sudo mysql -u root -p
+
+
+

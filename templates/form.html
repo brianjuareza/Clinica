@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/actualizar.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDITAR</title>
+</head>
+<body>
+    <section class="box-container">
+        <div class="box">
+            <form action="{{url_for('pdf_imprimir')}}" method="post">
+                {# Enviar el id en un campo oculto #}
+                <input type="hidden" name="id" value="{{dato[0]}}">
+                <br><br>
+                <input value="{{dato[1]}}" required type="text" class="input" placeholder="Nombres" name="Nombres" id="Nombres">
+                <input value="{{dato[2]}}" required type="text" class="input" placeholder="Apellidos" name="Apellidos" id="Apellidos">
+                <input value="{{dato[3]}}" required type="text" class="input" placeholder="Fecha_de_nacimiento" name="Fecha_de_nacimiento" id="Fecha_de_nacimiento">
+                <input value="{{dato[4]}}" required type="text" class="input" placeholder="Direccion" name="Direccion" id="Direccion">
+                <input value="{{dato[5]}}" required type="text" class="input" placeholder="Telefono" name="Telefono" id="Telefono">
+                <input value="{{dato[6]}}" required type="text" class="input" placeholder="Gmail" name="Gmail" id="Gmail">
+                <br><br>
+                <button type="submit" class="boton">Imprimir</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
